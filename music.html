@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kings music</title>
+    <link rel="stylesheet" href="./music.css">
+    <link rel="icon" href="./images (29).jpeg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <h1>Kings music</h1>
+        <nav>
+            <ul class="ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Playlist</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured">
+            <h2>Featured song</h2>
+            <div class="song-card">
+                <img src="./images (26).jpeg" alt="sky full of stars">
+                <div>
+                    <h3>Elevation-Worship_-_Praise</h3>
+                    <p>By Coldplay</p>
+
+                    <!--Hidden Audio player-->
+                    <audio id="my Audio">
+                        <source src="./Elevation_Worship_-_Praise_CeeNaija.com_.mp3" type="audio/mp3">
+                    </audio>
+
+                    <!--custom buttons-->
+                    <div class="controls">
+                        <button onclick="playsong()">&#9654 Play</button>
+                        <button onclick="pausesong()">&#9208 Pause</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-lists">
+            <h2>Top Tracks</h2>
+            <ul>
+                <li>
+                    <span>1. In_The_Room</span>
+                    <audio controls>
+                        <source src="./Maverick_City_Music_ft_Annatoria_-_In_The_Room_Afro_Beat_Version_.mp3" type="audio/mp3">
+                    </audio>
+                </li>
+                <li>
+                    <span>2. Hallelujah</span>
+                    <audio controls>
+                        <source src="./Kevin-Olusola-Hallelujah-I-Dont-Think-About-You-(CeeNaija.com).mp3" type="audio/mp3">
+                    </audio>
+                </li>
+                <li>
+                    <span>3. You_Too_Dey_Bless_Me</span>
+                    <audio controls>
+                        <source src="./Frank_Edward_U_Too_Dey_Bless_Me.mp3" type="audio/mp3">
+                    </audio>
+                </li>
+                <li>
+                    <span>4. God_No_Go_Shame_Us</span>
+                    <audio controls>
+                        <source src="./Prinx_Emmanuel_-_God_No_Go_Shame_Us.mp3" type="audio/mp3">
+                    </audio>
+                </li>
+                <li>
+                    <span>5. A sky full of stars</span>
+                    <audio controls>
+                        <source src="./A Sky Full of Stars.mp3" type="audio/mp3">
+                    </audio>
+                </li>
+                
+                <li>
+                    <span>6. Mercy_Said_No</span>
+                    <audio controls>
+                        <source src="./CeCe-Winans_-Mercy-Said-No-CeeNaija.com_.mp3" type="audio/mp3">
+                    </audio>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 &#169; My Music Stream. All rights reserved</p>
+    </footer>
+
+    <script>
+        const audio =
+    document.getElementById("my Audio");
+
+    function playsong() {
+        audio.play();
+    }
+
+    function pausesong() {
+        audio.pause();
+    }
+    </script>
+</body>
+</html>
